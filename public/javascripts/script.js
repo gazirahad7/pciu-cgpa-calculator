@@ -78,9 +78,12 @@ const renderStudentInfo = () => {
   studentShiftElm.innerHTML = studentInfo.Shift
 }
 
+
+  
+
+
 const addResultTrToResultTable = trimesterResult => {
 const resultsTable = select('.table tbody')
-
 
 
   semesters.push(trimesterResult.trimester)
@@ -108,6 +111,7 @@ const resultsTable = select('.table tbody')
   resultsTable.insertBefore(tr, resultsTable.firstChild)
  }
 
+ 
 const roundToTwoDecimal = (num, trailingZero = false) => trailingZero ? num.toFixed(2) : (Math.round(num * 100) / 100)
 
 const calculateTotalCreditHrsAndGPA = () => {
